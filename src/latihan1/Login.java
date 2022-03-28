@@ -5,6 +5,8 @@
  */
 package latihan1;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author oryza
@@ -35,8 +37,8 @@ public class Login extends javax.swing.JFrame {
         label1 = new java.awt.Label();
         jPanel2 = new javax.swing.JPanel();
         pIKACU_Lable = new java.awt.Label();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        tLogin = new javax.swing.JButton();
+        cancel = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         label3 = new java.awt.Label();
@@ -92,9 +94,19 @@ public class Login extends javax.swing.JFrame {
             .addComponent(pIKACU_Lable, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
         );
 
-        jButton1.setText("LOGIN");
+        tLogin.setText("LOGIN");
+        tLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tLoginActionPerformed(evt);
+            }
+        });
 
-        jButton2.setText("CANCEL");
+        cancel.setText("CANCEL");
+        cancel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cancelActionPerformed(evt);
+            }
+        });
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 102));
 
@@ -134,8 +146,6 @@ public class Login extends javax.swing.JFrame {
             .addComponent(label2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
         );
 
-        jTextField2.setText("jTextField1");
-
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
@@ -168,8 +178,6 @@ public class Login extends javax.swing.JFrame {
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-
-        jPasswordField1.setText("jPasswordField1");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -221,9 +229,9 @@ public class Login extends javax.swing.JFrame {
                         .addContainerGap())))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addComponent(tLogin)
                 .addGap(26, 26, 26)
-                .addComponent(jButton2)
+                .addComponent(cancel)
                 .addGap(20, 20, 20))
         );
         jPanel1Layout.setVerticalGroup(
@@ -237,8 +245,8 @@ public class Login extends javax.swing.JFrame {
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(tLogin)
+                    .addComponent(cancel))
                 .addContainerGap(25, Short.MAX_VALUE))
         );
 
@@ -255,6 +263,16 @@ public class Login extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void cancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_cancelActionPerformed
+
+    private void tLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tLoginActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null,"Maaf Fungsi Ini Belum Tersedia");
+    }//GEN-LAST:event_tLoginActionPerformed
 
     /**
      * @param args the command line arguments
@@ -296,8 +314,7 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton cancel;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -312,5 +329,6 @@ public class Login extends javax.swing.JFrame {
     private java.awt.Label label3;
     private javax.swing.JPanel pGambar;
     private java.awt.Label pIKACU_Lable;
+    private javax.swing.JButton tLogin;
     // End of variables declaration//GEN-END:variables
 }
