@@ -266,11 +266,22 @@ public class Login extends javax.swing.JFrame {
 
     private void cancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelActionPerformed
         // TODO add your handling code here:
+        /**
+         * Tombol ini akan membuat sistem keluar
+         * slamet
+         * 28/03/2022 12:15
+         */
         System.exit(0);
     }//GEN-LAST:event_cancelActionPerformed
 
     private void tLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tLoginActionPerformed
         // TODO add your handling code here:
+        /**
+         * Tombol ini akan berfungsi sebagai pindah halaman 
+         * Untuk Sementara menampilkan massage dialog
+         * slamet
+         * 28/03/2022 12:15
+         */
         JOptionPane.showMessageDialog(null,"Maaf Fungsi Ini Belum Tersedia");
     }//GEN-LAST:event_tLoginActionPerformed
 
